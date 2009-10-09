@@ -22,7 +22,7 @@
 #include <gtk/gtk.h>
 #include <gnome-keyring.h>
 #include <libsoup/soup.h>
-#include <rest/flickr-proxy.h>
+#include <rest-extras/flickr-proxy.h>
 #include <rest/rest-xml-parser.h>
 #include "service-info.h"
 #include "bisho-pane-flickr.h"

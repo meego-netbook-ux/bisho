@@ -20,6 +20,8 @@
 #ifndef _SERVICE_INFO_H
 #define _SERVICE_INFO_H
 
+#include <glib.h>
+
 typedef struct {
   char *name;
   char *display_name;

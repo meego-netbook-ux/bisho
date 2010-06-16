@@ -30,6 +30,7 @@ bin_PROGRAMS = bisho
 bisho_SOURCES = main.c
 bisho_LDADD = libbisho-common.la
 
+if ENABLE_CAPPLET
 ccmodulesdir = $(EXTENSIONSDIR)
 ccmodules_LTLIBRARIES = libbisho.la
 libbisho_la_SOURCES = \
@@ -38,3 +39,4 @@ libbisho_la_SOURCES = \
 libbisho_la_CPPFLAGS = $(AM_CPPFLAGS) $(CC_CFLAGS)
 libbisho_la_LIBADD = $(CC_LIBS) libbisho-common.la
 libbisho_la_LDFLAGS = $(AM_LDFLAGS) -module -avoid-version
+endif

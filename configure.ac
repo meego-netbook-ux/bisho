@@ -40,12 +40,25 @@ PKG_CHECK_MODULES(DEPS, gmodule-export-2.0
                         unique-1.0
                         mx-gtk-1.0)
 
+AC_ARG_ENABLE([capplet],
+              [AC_HELP_STRING([--disable-capplet],
+                              [Disable the building of the capplet])],
+              [enable_cappled=$enableval],
+              [enable_capplet=yes])
+
+AM_CONDITIONAL([ENABLE_CAPPLET], [test "x$enable_capplet" = "xyes"])
+
+AS_IF([test "x$enable_capplet" = "xyes"],
+      [
+      PKG_CHECK_MODULES(CAPPLET,
+                        libgnome-control-center-extension)
+
+      EXTENSIONSDIR=$($PKG_CONFIG libgnome-control-center-extension --variable=extensiondir)
+      AC_SUBST(EXTENSIONSDIR)
+])
+
 MODULESDIR=$libdir/AC_PACKAGE_NAME
 AC_SUBST([MODULESDIR])
-
-PKG_CHECK_MODULES(CC, libgnome-control-center-extension)
-EXTENSIONSDIR=$($PKG_CONFIG libgnome-control-center-extension --variable=extensiondir)
-AC_SUBST(EXTENSIONSDIR)
 
 AM_GCONF_SOURCE_2
 

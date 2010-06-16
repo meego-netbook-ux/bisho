@@ -131,7 +131,11 @@ log_in_clicked (GtkWidget *button, gpointer user_data)
   priv->frob = g_strdup (rest_xml_node_find (root, "frob")->content);
   rest_xml_node_unref (root);
 
-  url = flickr_proxy_build_login_url (FLICKR_PROXY (priv->proxy), priv->frob);
+  /* We need write permissions since lsw supports uploading */
+  url = flickr_proxy_build_login_url (FLICKR_PROXY (priv->proxy),
+                                      priv->frob,
+                                      "write");
+
   gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (button)), url, GDK_CURRENT_TIME, NULL);
 }
 

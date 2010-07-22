@@ -36,7 +36,7 @@ ccmodules_LTLIBRARIES = libbisho.la
 libbisho_la_SOURCES = \
 	module.c \
 	bisho-cc-panel.c bisho-cc-panel.h
-libbisho_la_CPPFLAGS = $(AM_CPPFLAGS) $(CC_CFLAGS)
-libbisho_la_LIBADD = $(CC_LIBS) libbisho-common.la
+libbisho_la_CPPFLAGS = $(AM_CPPFLAGS) $(CAPPLET_CFLAGS)
+libbisho_la_LIBADD = $(CAPPLET_LIBS) libbisho-common.la
 libbisho_la_LDFLAGS = $(AM_LDFLAGS) -module -avoid-version
 endif

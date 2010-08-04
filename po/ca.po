@@ -65,9 +65,8 @@ msgstr "Actualitza"
 
 #: ../src/bisho-pane-username.c:181 ../src/bisho-pane-username.c:185
 #: ../src/bisho-pane-username.c:257
-#, fuzzy
 msgid "Log in"
-msgstr "Autentica'm"
+msgstr "Entra"
 
 #: ../src/bisho-window.c:66
 msgid "Quit"

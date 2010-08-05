@@ -35,8 +35,8 @@ PKG_CHECK_MODULES(DEPS, gmodule-export-2.0
                         gconf-2.0
                         gnome-keyring-1
                         libsoup-2.4
-                        rest-0.6
-                        rest-extras-0.6
+                        rest-0.7
+                        rest-extras-0.7
                         unique-1.0
                         mx-gtk-1.0)
 

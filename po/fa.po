@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-02 18:49+0000\n"
+"PO-Revision-Date: 2010-08-12 03:16+0330\n"
+"Last-Translator: Mostafa <info@mostafadaneshvar.com>\n"
+"Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: Iran\n"
+
+#: ../data/bisho.desktop.in.h:1
+#: ../src/bisho-window.c:40
+#: ../src/bisho-cc-panel.c:69
+msgid "My Web Accounts"
+msgstr "حساب های وبی من"
+
+#. Please don't translate "myzone"
+#: ../data/bisho.desktop.in.h:3
+msgid "myzone & status"
+msgstr "وضعیت و منطقه ی من"
+
+#: ../src/bisho-pane.c:82
+msgid "Launch site for more information."
+msgstr "شروع سایت برای اطلاعات بیشتر"
+
+#: ../src/bisho-pane.c:86
+#, c-format
+msgid "<small>You'll need an account with %s and an Internet connection to use this web service.</small>"
+msgstr "<small> و یک اتصال اینترنت برای استفاده از این سرویس وب دارید.%s شما نیاز به یک حساب با </small>"
+
+#: ../src/bisho-pane.c:223
+#, c-format
+msgid "Sorry, we can't log in to %s. %s"
+msgstr "متاسفیم، ما نمی توانیم به %s وارد شویم. %s"
+
+#: ../src/bisho-pane.c:227
+#, c-format
+msgid "Sorry, we can't log in to %s"
+msgstr "متاسفیم، ما نمی توانیم به %s وارد شویم"
+
+#: ../src/bisho-pane-username.c:54
+#, c-format
+msgid "Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr "ورود با موفقیت. شما در چندین دقیقه آینده چیزهای جدیدی از %s را خواهید دید."
+
+#: ../src/bisho-pane-username.c:58
+#, c-format
+msgid "Sorry, we can't log into %s."
+msgstr "متاسفیم، نمی توانیم به %s وارد شویم."
+
+#: ../src/bisho-pane-username.c:161
+#, c-format
+msgid "Log out succeeded. All trace of %s has been removed from your computer."
+msgstr "خروج با موفقیت. همه ردها %s از کامپیوتر شما برداشته شده اند."
+
+#: ../src/bisho-pane-username.c:178
+msgid "Update"
+msgstr "به هنگام رسانی"
+
+#: ../src/bisho-pane-username.c:181
+#: ../src/bisho-pane-username.c:185
+#: ../src/bisho-pane-username.c:257
+msgid "Log in"
+msgstr "ورود"
+
+#: ../src/bisho-window.c:66
+msgid "Quit"
+msgstr "ترک"
+
+#: ../src/bisho-frame.c:76
+#: ../src/bisho-frame.c:82
+msgid "Username:"
+msgstr "نام کاربری:"
+
+#: ../src/bisho-frame.c:84
+msgid "Password:"
+msgstr "کلمه عبور:"
+
+#. Please don't translate 'myzone'
+#: ../src/bisho-frame.c:215
+msgid "Set up your social networks to see new updates in myzone and the status panel."
+msgstr "شبکه های اجتماعی خود را تنظیم کنید تا به روزرسانی های جدید را در قاب وضعیت و منطقه ی من ببینید."
+
+#: ../panes/flickr.c:298
+#: ../panes/oauth.c:314
+msgid "Log me in"
+msgstr "ورود من"
+
+#: ../panes/flickr.c:302
+#: ../panes/oauth.c:318
+msgid "Connecting..."
+msgstr "درحال اتصال..."
+
+#: ../panes/flickr.c:303
+#: ../panes/oauth.c:332
+#: ../panes/oauth.c:349
+msgid "Continue"
+msgstr "ادامه"
+
+#: ../panes/flickr.c:307
+#: ../panes/oauth.c:354
+msgid "Log in succeeded. You'll see new items in a couple of minutes."
+msgstr "ورود با موفقیت انجام شد. چندین دقیقه بعد ایتم های جدیدی را خواهید دید."
+
+#: ../panes/flickr.c:310
+#: ../panes/oauth.c:356
+msgid "Log me out"
+msgstr "خارج کردن من"
+
+#: ../panes/oauth.c:95
+msgid "You don't seem to have a network connection, this won't work."
+msgstr "به نظر می رسید شما اتصال شبکه ای ندارد، این کار نمی کند."
+
+#: ../panes/oauth.c:96
+msgid "You could check that the computer's clock is correct."
+msgstr "شما می توانید کنترل کنید که آیا ساعت آن کامپیوتر درست است."
+
+#: ../panes/oauth.c:97
+msgid "You could try again."
+msgstr "می توانید بار دیگر سعی کنید."
+
+#: ../panes/oauth.c:327
+#, c-format
+msgid "Once you have logged in to %s, press Continue."
+msgstr "وقتی وارد %s می شوید، دکمه ادامه را بزنید."
+
+#: ../panes/oauth.c:344
+#, c-format
+msgid "Once you have logged in to %s, enter the code they give you and press Continue."
+msgstr "وقتی وارد %s شدید، کدی که به شما داده شده است را وارد کنید و بر روی ادامه کلیک کنید."
+
+#: ../panes/oauth.c:453
+msgid "Code:"
+msgstr "کد:"
+

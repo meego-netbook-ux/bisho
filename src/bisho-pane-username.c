@@ -338,7 +338,8 @@ bisho_pane_username_add_entry (BishoPaneUsername *pane, const char *label, const
   value = gconf_client_get_string (priv->gconf, gconf_key, NULL);
   /* Even though we may be setting the text to NULL that isn't a problem because
      it ensures that the changed handler is fired. */
-  gtk_entry_set_text (GTK_ENTRY (entry), value);
+  if (value != NULL)
+    gtk_entry_set_text (GTK_ENTRY (entry), value);
   g_free (value);
 
   priv->rows++;

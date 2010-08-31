@@ -98,6 +98,21 @@ bisho_pane_set_property (GObject *object, guint property_id,
 }
 
 static void
+bisho_pane_dispose (GObject *object)
+{
+  BishoPane *pane = BISHO_PANE (object);
+
+  if (pane->banner_timeout != 0)
+    {
+      g_source_remove (pane->banner_timeout);
+      pane->banner_timeout = 0;
+    }
+
+  G_OBJECT_CLASS (bisho_pane_parent_class)->dispose (object);
+
+}
+
+static void
 bisho_pane_class_init (BishoPaneClass *klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS (klass);
@@ -105,6 +120,7 @@ bisho_pane_class_init (BishoPaneClass *klass)
 
     object_class->get_property = bisho_pane_get_property;
     object_class->set_property = bisho_pane_set_property;
+    object_class->dispose = bisho_pane_dispose;
 
     pspec = g_param_spec_pointer ("service", "service", "service",
                                   G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY);

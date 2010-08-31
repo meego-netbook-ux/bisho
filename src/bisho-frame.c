@@ -189,11 +189,28 @@ load_modules (gpointer foo)
 }
 
 static void
+bisho_frame_dispose (GObject *object)
+{
+  BishoFramePrivate *priv = BISHO_FRAME (object)->priv;
+
+  if (priv->client)
+    {
+      g_object_unref (priv->client);
+      priv->client = NULL;
+    }
+
+  G_OBJECT_CLASS (bisho_frame_parent_class)->dispose (object);
+}
+
+static void
 bisho_frame_class_init (BishoFrameClass *klass)
 {
+  GObjectClass *object_class = G_OBJECT_CLASS (klass);
   static GOnce once = G_ONCE_INIT;
 
   g_once (&once, load_modules, NULL);
+
+  object_class->dispose = bisho_frame_dispose;
 
   g_type_class_add_private (klass, sizeof (BishoFramePrivate));
 }

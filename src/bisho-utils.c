@@ -39,12 +39,20 @@ expanded_cb (GObject *object, GParamSpec *param_spec, gpointer user_data)
   }
 }
 
+static void
+item_finalized_cb (gpointer data, GObject *object)
+{
+  expander_list = g_list_remove (expander_list, object);
+}
+
 void
 bisho_utils_make_exclusive_expander (MuxExpandingItem *item)
 {
   g_return_if_fail (MUX_IS_EXPANDING_ITEM (item));
 
   expander_list = g_list_prepend (expander_list, item);
+
+  g_object_weak_ref (item, item_finalized_cb, NULL);
 
   g_signal_connect (item, "notify::expanded", G_CALLBACK (expanded_cb), NULL);
 }

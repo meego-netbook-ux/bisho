@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-28 09:28+0000\n"
-"PO-Revision-Date: 2010-04-29 11:31-0800\n"
+"POT-Creation-Date: 2010-07-02 18:49+0000\n"
+"PO-Revision-Date: 2010-09-14 18:19-0800\n"
 "Last-Translator: Anna Bergman <anna.b.bergman@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,11 +26,11 @@ msgstr "Omat Web-tilit"
 #. Please don't translate "myzone"
 #: ../data/bisho.desktop.in.h:3
 msgid "myzone & status"
-msgstr "myzone & tila"
+msgstr "myzone ja tila"
 
 #: ../src/bisho-pane.c:82
 msgid "Launch site for more information."
-msgstr "Etsi lisätietoja avaamalla sivusto."
+msgstr "Saat lisätietoja käynnistämällä sivuston."
 
 #: ../src/bisho-pane.c:86
 #, c-format
@@ -47,28 +47,28 @@ msgstr "Kohteeseen %s ei voi kirjautua sisään. %s"
 msgid "Sorry, we can't log in to %s"
 msgstr "Ei voida kirjautua kohteeseen %s"
 
-#: ../src/bisho-pane-username.c:53
+#: ../src/bisho-pane-username.c:54
 #, c-format
 msgid "Log in succeeded. You'll see new things from %s in a couple of minutes."
 msgstr "Kirjautuminen onnistui. Näet uutta sisältöä kohteesta %s muutaman minuutin kuluessa."
 
-#: ../src/bisho-pane-username.c:57
+#: ../src/bisho-pane-username.c:58
 #, c-format
 msgid "Sorry, we can't log into %s."
 msgstr "Ei voida kirjautua kohteeseen %s."
 
-#: ../src/bisho-pane-username.c:136
+#: ../src/bisho-pane-username.c:161
 #, c-format
 msgid "Log out succeeded. All trace of %s has been removed from your computer."
 msgstr "Uloskirjautuminen onnistui. Kaikki %s jäljet on poistettu tietokoneeltasi."
 
-#: ../src/bisho-pane-username.c:153
+#: ../src/bisho-pane-username.c:178
 msgid "Update"
-msgstr "Päivitys"
+msgstr "Päivitä"
 
-#: ../src/bisho-pane-username.c:156
-#: ../src/bisho-pane-username.c:160
-#: ../src/bisho-pane-username.c:232
+#: ../src/bisho-pane-username.c:181
+#: ../src/bisho-pane-username.c:185
+#: ../src/bisho-pane-username.c:257
 msgid "Log in"
 msgstr "Kirjaudu sisään"
 
@@ -90,30 +90,30 @@ msgstr "Salasana:"
 msgid "Set up your social networks to see new updates in myzone and the status panel."
 msgstr "Määritä sosiaaliset verkkosi nähdäksesi päivityksiä myzone:ssa ja tilapaneelissa."
 
-#: ../panes/flickr.c:286
-#: ../panes/oauth.c:307
+#: ../panes/flickr.c:298
+#: ../panes/oauth.c:314
 msgid "Log me in"
 msgstr "Kirjaudu sisään"
 
 # wait
-#: ../panes/flickr.c:290
-#: ../panes/oauth.c:311
+#: ../panes/flickr.c:302
+#: ../panes/oauth.c:318
 msgid "Connecting..."
 msgstr "Yhdistetään..."
 
-#: ../panes/flickr.c:291
-#: ../panes/oauth.c:325
-#: ../panes/oauth.c:342
+#: ../panes/flickr.c:303
+#: ../panes/oauth.c:332
+#: ../panes/oauth.c:349
 msgid "Continue"
 msgstr "Jatka"
 
-#: ../panes/flickr.c:295
-#: ../panes/oauth.c:347
+#: ../panes/flickr.c:307
+#: ../panes/oauth.c:354
 msgid "Log in succeeded. You'll see new items in a couple of minutes."
 msgstr "Kirjautuminen onnistui. Näet uutta sisältöä muutaman minuutin kuluessa."
 
-#: ../panes/flickr.c:298
-#: ../panes/oauth.c:349
+#: ../panes/flickr.c:310
+#: ../panes/oauth.c:356
 msgid "Log me out"
 msgstr "Kirjaudu ulos"
 
@@ -129,17 +129,17 @@ msgstr "Tarkista, että tietokoneen kello näyttää oikeaa aikaa."
 msgid "You could try again."
 msgstr "Voit yrittää uudelleen."
 
-#: ../panes/oauth.c:320
+#: ../panes/oauth.c:327
 #, c-format
 msgid "Once you have logged in to %s, press Continue."
 msgstr "Paina Jatka, kun olet kirjautuneena palveluun %s."
 
-#: ../panes/oauth.c:337
+#: ../panes/oauth.c:344
 #, c-format
 msgid "Once you have logged in to %s, enter the code they give you and press Continue."
 msgstr "Kun olet kirjautunut palveluun %s, anna koodi joka sinulle annetaan ja paina Jatka."
 
-#: ../panes/oauth.c:446
+#: ../panes/oauth.c:453
 msgid "Code:"
 msgstr "Koodi:"
 

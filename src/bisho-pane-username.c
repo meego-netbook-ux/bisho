@@ -87,6 +87,7 @@ on_login_clicked (GtkButton *button, gpointer user_data)
 
   gtk_container_foreach (GTK_CONTAINER (pane->priv->table),
                          login_widget_foreach, pane);
+  sw_client_service_credentials_updated (pane->priv->service);
 
   /* If we are not watching for the verify signal, show the banner now */
   if (!pane->priv->can_verify) {
@@ -154,6 +155,8 @@ on_logout_clicked (GtkButton *button, gpointer user_data)
 
   gtk_container_foreach (GTK_CONTAINER (pane->priv->table),
                          logout_widget_foreach, pane);
+  sw_client_service_credentials_updated (pane->priv->service);
+
 
   g_object_get (pane, "service", &info, NULL);
   g_assert (info);

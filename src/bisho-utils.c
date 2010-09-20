@@ -52,7 +52,7 @@ bisho_utils_make_exclusive_expander (MuxExpandingItem *item)
 
   expander_list = g_list_prepend (expander_list, item);
 
-  g_object_weak_ref (item, item_finalized_cb, NULL);
+  g_object_weak_ref (G_OBJECT (item), item_finalized_cb, NULL);
 
   g_signal_connect (item, "notify::expanded", G_CALLBACK (expanded_cb), NULL);
 }

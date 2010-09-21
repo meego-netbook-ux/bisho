@@ -27,8 +27,13 @@ typedef struct {
   char *display_name;
   char *description;
   char *link;
-  char *auth_type;
   char *icon;
+  char *auth_type;
+  union {
+    struct {
+      char *server;
+    } password;
+  } auth;
   GKeyFile *keys;
 } ServiceInfo;
 

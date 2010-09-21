@@ -53,12 +53,18 @@ get_info_for_service (const char *name)
   }
 
   info = g_slice_new0 (ServiceInfo);
+  info->keys = keys;
+
   info->name = g_strdup (name);
   info->display_name = g_key_file_get_locale_string (keys, GROUP, "Name", NULL, NULL);
   info->description = g_key_file_get_locale_string (keys, GROUP, "Description", NULL, NULL);
   info->link = g_key_file_get_string (keys, GROUP, "Link", NULL);
   info->auth_type = g_key_file_get_string (keys, GROUP, "AuthType", NULL);
-  info->keys = keys;
+
+  if (g_str_equal (info->auth_type, "username") ||
+      g_str_equal (info->auth_type, "password")) {
+    info->auth.password.server = g_key_file_get_string (keys, GROUP, "AuthPasswordServer", NULL);
+  }
 
   /* TODO: this should be specified in the key file or something */
   path = g_path_get_dirname (real_path);

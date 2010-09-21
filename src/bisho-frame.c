@@ -71,17 +71,11 @@ construct_ui (BishoFrame *frame, const char *service_name)
   gtk_box_set_spacing (box, 8);
 
   if (g_strcmp0 (info->auth_type, "username") == 0) {
-    pane = bisho_pane_username_new (info);
-    bisho_pane_username_add_entry
-      (BISHO_PANE_USERNAME (pane), _("Username:"), "user", TRUE);
+    pane = bisho_pane_username_new (info, FALSE);
     gtk_widget_show (pane);
     gtk_box_pack_start (GTK_BOX (box), pane, FALSE, FALSE, 0);
   } else if (g_strcmp0 (info->auth_type, "password") == 0) {
-    pane = bisho_pane_username_new (info);
-    bisho_pane_username_add_entry
-      (BISHO_PANE_USERNAME (pane), _("Username:"), "user", TRUE);
-    bisho_pane_username_add_entry
-      (BISHO_PANE_USERNAME (pane), _("Password:"), "password", FALSE);
+    pane = bisho_pane_username_new (info, TRUE);
     gtk_widget_show (pane);
     gtk_box_pack_start (GTK_BOX (box), pane, FALSE, FALSE, 0);
   } else {

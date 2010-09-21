@@ -59,9 +59,7 @@ struct _BishoPaneUsernameClass {
 
 GType bisho_pane_username_get_type (void) G_GNUC_CONST;
 
-GtkWidget *bisho_pane_username_new (ServiceInfo *info);
-
-void bisho_pane_username_add_entry (BishoPaneUsername *pane, const char *label, const char *key, gboolean visible);
+GtkWidget *bisho_pane_username_new (ServiceInfo *info, gboolean with_password);
 
 G_END_DECLS
 

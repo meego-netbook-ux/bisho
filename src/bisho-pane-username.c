@@ -33,6 +33,7 @@ struct _BishoPaneUsernamePrivate {
   GtkWidget *button;
   GtkWidget *logout_button;
   GtkWidget *username_e, *password_e;
+  guint32 current_id; /* The keyring item ID of the current password */
 };
 
 enum {
@@ -67,12 +68,14 @@ add_banner (BishoPaneUsername *pane, gboolean success)
 
 static void
 keyring_op_done_cb (GnomeKeyringResult result,
+                    guint              new_id,
                     gpointer           user_data)
 {
   BishoPaneUsername *pane = BISHO_PANE_USERNAME (user_data);
 
   switch (result) {
   case GNOME_KEYRING_RESULT_OK:
+    pane->priv->current_id = new_id;
     sw_client_service_credentials_updated (pane->priv->service);
     break;
   default:
@@ -95,14 +98,17 @@ on_login_clicked (GtkButton *button, gpointer user_data)
   else
     password = "";
 
-  gnome_keyring_store_password (GNOME_KEYRING_NETWORK_PASSWORD,
-                                NULL,
-                                priv->info->display_name,
-                                password,
-                                keyring_op_done_cb, pane, NULL,
-                                "user", username,
-                                "server", priv->info->auth.password.server,
-                                NULL);
+  /* Wipe the old data because we only support -- at the moment -- a single user */
+  g_debug ("deleting id %u", priv->current_id);
+  gnome_keyring_item_delete_sync (NULL, priv->current_id);
+  priv->current_id = 0;
+
+  gnome_keyring_set_network_password  (NULL,
+                                       username,
+                                       NULL,
+                                       priv->info->auth.password.server,
+                                       NULL, NULL, NULL, 0, password,
+                                       keyring_op_done_cb, pane, NULL);
 
   /* If we are not watching for the verify signal, show the banner now */
   if (!pane->priv->can_verify) {
@@ -172,10 +178,8 @@ on_logout_clicked (GtkButton *button, gpointer user_data)
   if (priv->with_password)
     gtk_entry_set_text (GTK_ENTRY (priv->password_e), "");
 
-  gnome_keyring_delete_password (GNOME_KEYRING_NETWORK_PASSWORD,
-                                 remove_done_cb, pane, NULL,
-                                 "server", priv->info->auth.password.server,
-                                 NULL);
+  priv->current_id = 0;
+  gnome_keyring_item_delete (NULL, priv->current_id, remove_done_cb, pane, NULL);
 
   message = g_strdup_printf (_("Log out succeeded. "
                                "All trace of %s has been removed from your computer."),
@@ -300,6 +304,8 @@ found_password_cb (GnomeKeyringResult  result,
 
   if (result == GNOME_KEYRING_RESULT_OK && list != NULL) {
     GnomeKeyringNetworkPasswordData *data = list->data;
+
+    pane->priv->current_id = data->item_id;
 
     gtk_entry_set_text (GTK_ENTRY (pane->priv->username_e), data->user);
     if (pane->priv->with_password)

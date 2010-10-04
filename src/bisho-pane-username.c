@@ -99,7 +99,6 @@ on_login_clicked (GtkButton *button, gpointer user_data)
     password = "";
 
   /* Wipe the old data because we only support -- at the moment -- a single user */
-  g_debug ("deleting id %u", priv->current_id);
   gnome_keyring_item_delete_sync (NULL, priv->current_id);
   priv->current_id = 0;
 
@@ -178,8 +177,8 @@ on_logout_clicked (GtkButton *button, gpointer user_data)
   if (priv->with_password)
     gtk_entry_set_text (GTK_ENTRY (priv->password_e), "");
 
-  priv->current_id = 0;
   gnome_keyring_item_delete (NULL, priv->current_id, remove_done_cb, pane, NULL);
+  priv->current_id = 0;
 
   message = g_strdup_printf (_("Log out succeeded. "
                                "All trace of %s has been removed from your computer."),

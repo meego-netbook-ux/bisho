@@ -1,21 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
-# Pavel, 2010.
-# Pavel Fric <fripohled@blogspot.com>, 2010.
+# 
+# Translators:
+# David Kolibáč <david@kolibac.cz>, 2011.
+#   <pavelfric@seznam.cz>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-29 15:45+0000\n"
-"PO-Revision-Date: 2010-11-03 15:44+0100\n"
-"Last-Translator: Pavel Fric <fripohled@blogspot.com>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Project-Id-Version: bisho\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-02 13:17-0700\n"
+"PO-Revision-Date: 2011-08-18 05:45+0000\n"
+"Last-Translator: fri <pavelfric@seznam.cz>\n"
+"Language-Team: Czech (http://www.transifex.net/projects/p/meego/team/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 
 #: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
 #: ../src/bisho-cc-panel.c:69
@@ -25,7 +27,7 @@ msgstr "Mé účty na internetu"
 #. Please don't translate "myzone"
 #: ../data/bisho.desktop.in.h:3
 msgid "myzone & status"
-msgstr "Moje oblast (Myzone) a stav"
+msgstr "Moje oblast a stav"
 
 #: ../src/bisho-pane.c:82
 msgid "Launch site for more information."
@@ -34,68 +36,71 @@ msgstr "Pro získání více informací navštivte internetové stránky."
 #: ../src/bisho-pane.c:86
 #, c-format
 msgid ""
-"<small>You'll need an account with %s and an Internet connection to use this "
-"web service.</small>"
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
 msgstr ""
 "<small>Chcete-li používat tuto internetovou službu, potřebujete účet s %s a "
 "připojení k internetu.</small>"
 
-#: ../src/bisho-pane.c:223
+#: ../src/bisho-pane.c:239
 #, c-format
 msgid "Sorry, we can't log in to %s. %s"
 msgstr "Je nám líto, ale nemůžeme se přihlásit do %s. %s"
 
-#: ../src/bisho-pane.c:227
+#: ../src/bisho-pane.c:243
 #, c-format
 msgid "Sorry, we can't log in to %s"
 msgstr "Je nám líto, ale nemůžeme se přihlásit do %s"
 
-#: ../src/bisho-pane-username.c:54
+#: ../src/bisho-pane-username.c:57
 #, c-format
-msgid "Log in succeeded. You'll see new things from %s in a couple of minutes."
-msgstr "Přihlášení proběhlo úspěšně. Za pár minut uvidíte nové věci z %s."
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr "Přihlášení proběhlo úspěšně. Za několik minut uvidíte nové věci z %s."
 
-#: ../src/bisho-pane-username.c:58
+#: ../src/bisho-pane-username.c:61
 #, c-format
 msgid "Sorry, we can't log into %s."
-msgstr "Promiňte, ale nemůžeme se přihlásit do %s"
+msgstr "Je nám líto, ale nemůžeme se přihlásit do %s"
 
-#: ../src/bisho-pane-username.c:161
+#: ../src/bisho-pane-username.c:183
 #, c-format
-msgid "Log out succeeded. All trace of %s has been removed from your computer."
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
 msgstr ""
-"Odhlášení proběhlo úspěšně. Všechny stopy k %s byly odstraněny z vašeho "
+"Odhlášení proběhlo úspěšně. Všechny stopy %s byly odstraněny z vašeho "
 "počítače."
 
-#: ../src/bisho-pane-username.c:178
+#: ../src/bisho-pane-username.c:200
 msgid "Update"
 msgstr "Obnovit"
 
-#: ../src/bisho-pane-username.c:181 ../src/bisho-pane-username.c:185
-#: ../src/bisho-pane-username.c:257
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
 msgid "Log in"
 msgstr "Přihlásit se"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
+msgid "Username:"
+msgstr "Uživatelské jméno:"
+
+#: ../src/bisho-pane-username.c:346
+msgid "Password:"
+msgstr "Heslo:"
 
 #: ../src/bisho-window.c:66
 msgid "Quit"
 msgstr "Ukončit"
 
-#: ../src/bisho-frame.c:76 ../src/bisho-frame.c:82
-msgid "Username:"
-msgstr "Uživatelské jméno:"
-
-#: ../src/bisho-frame.c:84
-msgid "Password:"
-msgstr "Heslo:"
-
 #. Please don't translate 'myzone'
-#: ../src/bisho-frame.c:215
+#: ../src/bisho-frame.c:226
 msgid ""
 "Set up your social networks to see new updates in myzone and the status "
 "panel."
 msgstr ""
-"Nastavte si své společenské sítě, abyste viděl nové změny v panelu Moje "
-"oblast a v panelu Stav."
+"Nastavte si své společenské sítě, abyste viděl nové změny v panelech Moje "
+"oblast a Stav."
 
 #: ../panes/flickr.c:298 ../panes/oauth.c:314
 msgid "Log me in"
@@ -111,7 +116,7 @@ msgstr "Pokračovat"
 
 #: ../panes/flickr.c:307 ../panes/oauth.c:354
 msgid "Log in succeeded. You'll see new items in a couple of minutes."
-msgstr "Přihlášení proběhlo úspěšně. Za pár minut uvidíte nové položky."
+msgstr "Přihlášení proběhlo úspěšně. Za několik minut uvidíte nové položky."
 
 #: ../panes/flickr.c:310 ../panes/oauth.c:356
 msgid "Log me out"
@@ -119,7 +124,7 @@ msgstr "Odhlásit se"
 
 #: ../panes/oauth.c:95
 msgid "You don't seem to have a network connection, this won't work."
-msgstr "Vypadá to, že nejste připojen k síti - bez toho to nebude pracovat."
+msgstr "Vypadá to, že nejste připojeni k síti - bez toho to nebude pracovat."
 
 #: ../panes/oauth.c:96
 msgid "You could check that the computer's clock is correct."
@@ -146,5 +151,4 @@ msgstr ""
 msgid "Code:"
 msgstr "Kód:"
 
-#~ msgid "%s login changed."
-#~ msgstr "Přihlašovací údaje k %s byly změněny."
+

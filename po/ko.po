@@ -1,20 +1,21 @@
-#
-# Park Shinjo <peremen@gmail.com>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-02 18:49+0000\n"
-"PO-Revision-Date: 2010-07-10 05:48+0900\n"
-"Last-Translator: Park Shinjo <peremen@gmail.com>\n"
-"Language-Team: Korean <peremen@gmail.com>\n"
+"Project-Id-Version: bisho\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-02 13:17-0700\n"
+"PO-Revision-Date: 2010-11-30 06:21+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Korean (http://www.transifex.net/projects/p/meego/team/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: Korean\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Lokalize 1.0\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
 #: ../src/bisho-cc-panel.c:69
@@ -33,58 +34,61 @@ msgstr "더 많은 정보를 보기 위하여 사이트를 엽니다."
 #: ../src/bisho-pane.c:86
 #, c-format
 msgid ""
-"<small>You'll need an account with %s and an Internet connection to use this "
-"web service.</small>"
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
 msgstr "<small>%s 계정 및 웹 서비스를 사용하기 위한 인터넷 연결이 필요합니다.</small>"
 
-#: ../src/bisho-pane.c:223
+#: ../src/bisho-pane.c:239
 #, c-format
 msgid "Sorry, we can't log in to %s. %s"
 msgstr "죄송합니다. %s에 로그인할 수 없습니다. %s"
 
-#: ../src/bisho-pane.c:227
+#: ../src/bisho-pane.c:243
 #, c-format
 msgid "Sorry, we can't log in to %s"
 msgstr "죄송합니다. %s에 로그인할 수 없습니다."
 
-#: ../src/bisho-pane-username.c:54
+#: ../src/bisho-pane-username.c:57
 #, c-format
-msgid "Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
 msgstr "로그인하였습니다. 잠시 기다리면 %s에서 새 항목을 가져옵니다."
 
-#: ../src/bisho-pane-username.c:58
+#: ../src/bisho-pane-username.c:61
 #, c-format
 msgid "Sorry, we can't log into %s."
 msgstr "죄송합니다. %s에 로그인할 수 없습니다."
 
-#: ../src/bisho-pane-username.c:161
+#: ../src/bisho-pane-username.c:183
 #, c-format
-msgid "Log out succeeded. All trace of %s has been removed from your computer."
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
 msgstr "로그아웃하였습니다. 컴퓨터에서 %s에 접속한 모든 기록이 삭제되었습니다."
 
-#: ../src/bisho-pane-username.c:178
+#: ../src/bisho-pane-username.c:200
 msgid "Update"
 msgstr "업데이트"
 
-#: ../src/bisho-pane-username.c:181 ../src/bisho-pane-username.c:185
-#: ../src/bisho-pane-username.c:257
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
 msgid "Log in"
 msgstr "로그인"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
+msgid "Username:"
+msgstr "사용자 이름:"
+
+#: ../src/bisho-pane-username.c:346
+msgid "Password:"
+msgstr "암호:"
 
 #: ../src/bisho-window.c:66
 msgid "Quit"
 msgstr "끝내기"
 
-#: ../src/bisho-frame.c:76 ../src/bisho-frame.c:82
-msgid "Username:"
-msgstr "사용자 이름:"
-
-#: ../src/bisho-frame.c:84
-msgid "Password:"
-msgstr "암호:"
-
 #. Please don't translate 'myzone'
-#: ../src/bisho-frame.c:215
+#: ../src/bisho-frame.c:226
 msgid ""
 "Set up your social networks to see new updates in myzone and the status "
 "panel."
@@ -138,41 +142,4 @@ msgstr "%s에 로그인하였으면 주어진 코드를 입력하고 계속을 �
 msgid "Code:"
 msgstr "코드:"
 
-#~ msgid "%s login changed."
-#~ msgstr "%s 로그인이 변경되었습니다."
 
-#~ msgid "Log in pending"
-#~ msgstr "로그인 보류"
-
-#~ msgid "Log in pending..."
-#~ msgstr "로그인 보류..."
-
-#~ msgid "Logged in as %s"
-#~ msgstr "%s으로 로그인됨"
-
-#~ msgid "Logged in"
-#~ msgstr "로그인됨"
-
-#~ msgid "<b>Status:</b>"
-#~ msgstr "<b>상태:</b>"
-
-#~ msgid ""
-#~ "You'll need an account with %s and an Internet connection to use this web "
-#~ "service."
-#~ msgstr ""
-#~ "%s 계정 및 이 웹 서비스를 사용할 수 있는 인터넷 연결기능이 필요합니다. "
-
-#~ msgid "Cannot login to %s"
-#~ msgstr "%s에 로그인 할수 없음"
-
-#~ msgid "Web Services"
-#~ msgstr "웹 서비스"
-
-#~ msgid "Press Continue to continue the log in."
-#~ msgstr "로그인을 계속하려면 [계속]을 선택하십시오. "
-
-#~ msgid "Web Services Settings"
-#~ msgstr "웹 서비스 설정"
-
-#~ msgid "Once you have logged in to Flickr, press Continue."
-#~ msgstr "일단 Flickr에 로그인 했으면 [계속]을 선택하십시오. "

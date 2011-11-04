@@ -1,25 +1,25 @@
-# Romanian translations for bisho package.
-# Copyright (C) 2009 The bisho copyright holder
-# This file is distributed under the same license as the bisho package.
-# Cosmin Bordeianu <elloxar@gmail.com>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Andreea Sandu <andreea.m.sandu@intel.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: bisho\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-02 16:13+0000\n"
-"PO-Revision-Date: 2009-10-03 20:55+0200\n"
-"Last-Translator: Cosmin Bordeianu <elloxar@gmail.com>\n"
-"Language-Team: Moblin Romania <live@moblin.ro>\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-02 13:17-0700\n"
+"PO-Revision-Date: 2011-04-04 14:43+0000\n"
+"Last-Translator: minosandu <andreea.m.sandu@intel.com>\n"
+"Language-Team: Romanian (http://www.transifex.net/projects/p/meego/team/ro/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Romanian\n"
-"X-Poedit-Country: ROMANIA\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
 
-#: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:169
+#: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
+#: ../src/bisho-cc-panel.c:69
 msgid "My Web Accounts"
 msgstr "Conturile mele web"
 
@@ -28,109 +28,73 @@ msgstr "Conturile mele web"
 msgid "myzone & status"
 msgstr "myzone & status"
 
-#: ../src/bisho-pane.c:79
+#: ../src/bisho-pane.c:82
 msgid "Launch site for more information."
 msgstr "Lansaţi site-ul pentru mai multe informaţii."
 
-#: ../src/bisho-pane.c:83
+#: ../src/bisho-pane.c:86
 #, c-format
 msgid ""
-"<small>You'll need an account with %s and an Internet connection to use this "
-"web service.</small>"
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
 msgstr ""
-"<small>Veţi avea nevoie de un cont cu %s şi o conexiune la Internet pentru a "
-"utiliza acest serviciu web.</small>"
+"<small>Veţi avea nevoie de un cont cu %s şi o conexiune la Internet pentru a"
+" utiliza acest serviciu web.</small>"
 
-#: ../src/bisho-pane-flickr.c:245
-msgid "Log in pending"
-msgstr "Autentificare în curs de aşteptare"
-
-#: ../src/bisho-pane-flickr.c:246 ../src/bisho-pane-oauth.c:265
-msgid "Log me in"
-msgstr "Autentifică-mă"
-
-#: ../src/bisho-pane-flickr.c:251
-msgid "Log in pending..."
-msgstr "Autentificare în curs de aşteptare..."
-
-#: ../src/bisho-pane-flickr.c:252 ../src/bisho-pane-oauth.c:270
-msgid "Working..."
-msgstr "Se lucrează..."
-
-#: ../src/bisho-pane-flickr.c:258
-#, c-format
-msgid "Logged in as %s"
-msgstr "Autentificat ca %s"
-
-#: ../src/bisho-pane-flickr.c:262
-msgid "Logged in"
-msgstr "Autentificat"
-
-#: ../src/bisho-pane-flickr.c:264 ../src/bisho-pane-oauth.c:307
-msgid "Log me out"
-msgstr "Deconectează-mă"
-
-#: ../src/bisho-pane-flickr.c:345
-msgid "<b>Status:</b>"
-msgstr "<b>Status:</b>"
-
-#: ../src/bisho-pane-oauth.c:85
-msgid "You don't seem to have a network connection, this won't work."
-msgstr "Nu pare să existe o conexiune a rețelei, probabil nu va funcționa."
-
-#: ../src/bisho-pane-oauth.c:86
+#: ../src/bisho-pane.c:239
 #, c-format
 msgid "Sorry, we can't log in to %s. %s"
 msgstr "Nu se poate autentifica la %s. %s"
 
-#: ../src/bisho-pane-oauth.c:87
-msgid "You could check that the computer's clock is correct."
-msgstr "Puteți verifica dacă ceasul calculatorului este setat corect."
-
-#: ../src/bisho-pane-oauth.c:88
-msgid "You could try again."
-msgstr "Puteți încerca din nou."
-
-#: ../src/bisho-pane-oauth.c:112 ../src/bisho-pane-oauth.c:206
+#: ../src/bisho-pane.c:243
 #, c-format
 msgid "Sorry, we can't log in to %s"
 msgstr "Nu se poate autentifica la %s"
 
-#: ../src/bisho-pane-oauth.c:278
-#, c-format
-msgid "Once you have logged in to %s, press Continue."
-msgstr "Odată ce v-aţi autentificat la %s, apăsaţi Continuă."
-
-#: ../src/bisho-pane-oauth.c:283 ../src/bisho-pane-oauth.c:300
-msgid "Continue"
-msgstr "Continuă"
-
-#: ../src/bisho-pane-oauth.c:295
+#: ../src/bisho-pane-username.c:57
 #, c-format
 msgid ""
-"Once you have logged in to %s, enter the code they give you and press "
-"Continue."
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
 msgstr ""
-"Odată autentificat la %s, introduce'i condul dat de ei și apăsaţi Continuă."
+"Autentificare reușită. Puteți vizualiza elemente noi din %s în câteva "
+"minute."
 
-#: ../src/bisho-pane-oauth.c:306
-msgid "Log in succeeded. You'll see new items in a couple of minutes."
-msgstr "Autentificare reușită. Puteți vizualiza elemente noi în câteva minute."
+#: ../src/bisho-pane-username.c:61
+#, c-format
+msgid "Sorry, we can't log into %s."
+msgstr "Ne cerem scuze, autentificarea la %s nu se poate realiza."
 
-#: ../src/bisho-pane-oauth.c:373
-msgid "Code:"
-msgstr "Cod:"
+#: ../src/bisho-pane-username.c:183
+#, c-format
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
+msgstr ""
+"Ieșire cu succes din sesiune. Orice urmă de %s va fi ștearsă din sistem."
 
-#: ../src/bisho-window.c:81 ../src/bisho-window.c:97
+#: ../src/bisho-pane-username.c:200
+msgid "Update"
+msgstr "Actualizare"
+
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
+msgid "Log in"
+msgstr "Autentificare"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
 msgid "Username:"
 msgstr "Utilizator:"
 
-#: ../src/bisho-window.c:103
+#: ../src/bisho-pane-username.c:346
 msgid "Password:"
 msgstr "Parolă:"
 
+#: ../src/bisho-window.c:66
+msgid "Quit"
+msgstr "Ieșire"
+
 #. Please don't translate 'myzone'
-#: ../src/bisho-window.c:178
+#: ../src/bisho-frame.c:226
 msgid ""
 "Set up your social networks to see new updates in myzone and the status "
 "panel."
@@ -138,29 +102,54 @@ msgstr ""
 "Configuraţi-vă reţelele sociale pentru a vedea noi actualizări în myzone şi "
 "în panoul de stare."
 
-#: ../src/entry.c:57
+#: ../panes/flickr.c:298 ../panes/oauth.c:314
+msgid "Log me in"
+msgstr "Autentifică-mă"
+
+#: ../panes/flickr.c:302 ../panes/oauth.c:318
+msgid "Connecting..."
+msgstr "Se conectează..."
+
+#: ../panes/flickr.c:303 ../panes/oauth.c:332 ../panes/oauth.c:349
+msgid "Continue"
+msgstr "Continuă"
+
+#: ../panes/flickr.c:307 ../panes/oauth.c:354
+msgid "Log in succeeded. You'll see new items in a couple of minutes."
+msgstr ""
+"Autentificare reușită. Puteți vizualiza elemente noi în câteva minute."
+
+#: ../panes/flickr.c:310 ../panes/oauth.c:356
+msgid "Log me out"
+msgstr "Deconectează-mă"
+
+#: ../panes/oauth.c:95
+msgid "You don't seem to have a network connection, this won't work."
+msgstr "Nu pare să existe o conexiune a rețelei, probabil nu va funcționa."
+
+#: ../panes/oauth.c:96
+msgid "You could check that the computer's clock is correct."
+msgstr "Puteți verifica dacă ceasul calculatorului este setat corect."
+
+#: ../panes/oauth.c:97
+msgid "You could try again."
+msgstr "Puteți încerca din nou."
+
+#: ../panes/oauth.c:327
 #, c-format
-msgid "%s login changed."
-msgstr "%s autentificare modificată."
+msgid "Once you have logged in to %s, press Continue."
+msgstr "Odată ce v-aţi autentificat la %s, apăsaţi Continuă."
 
-#~ msgid ""
-#~ "You'll need an account with %s and an Internet connection to use this web "
-#~ "service."
-#~ msgstr ""
-#~ "Veţi avea nevoie de un cont cu %s şi o conexiune la Internet pentru a "
-#~ "utiliza acest serviciu web."
+#: ../panes/oauth.c:344
+#, c-format
+msgid ""
+"Once you have logged in to %s, enter the code they give you and press "
+"Continue."
+msgstr ""
+"Odată autentificat la %s, introduce'i condul dat de ei și apăsaţi Continuă."
 
-#~ msgid "Cannot login to %s"
-#~ msgstr "Nu se poate autentifica la %s"
+#: ../panes/oauth.c:453
+msgid "Code:"
+msgstr "Cod:"
 
-#~ msgid "Web Services"
-#~ msgstr "Servicii Web"
 
-#~ msgid "Press Continue to continue the log in."
-#~ msgstr "Apasați Continuă pentru a continua autentificarea."
-
-#~ msgid "Web Services Settings"
-#~ msgstr "Setări Servicii Web"
-
-#~ msgid "Once you have logged in to Flickr, press Continue."
-#~ msgstr "Odată autentificat la Flickr, apasați Continuă."

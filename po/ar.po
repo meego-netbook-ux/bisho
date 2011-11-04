@@ -1,20 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# mohammad Alhargan <malham1@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: bisho\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-02 18:49+0000\n"
-"PO-Revision-Date: 2009-11-23 18:57+0200\n"
-"Last-Translator: Yousef Abu Al Naser <yousef@itsoftex.com>\n"
-"Language-Team: ITSOFTEX <info@itsoftex.com>\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-02 13:17-0700\n"
+"PO-Revision-Date: 2011-03-22 15:17+0000\n"
+"Last-Translator: imksa <malham1@gmail.com>\n"
+"Language-Team: Arabic (http://www.transifex.net/projects/p/meego/team/ar/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Arabic\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
 
 #: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
 #: ../src/bisho-cc-panel.c:69
@@ -24,7 +26,7 @@ msgstr "حساباتي الشبكية"
 #. Please don't translate "myzone"
 #: ../data/bisho.desktop.in.h:3
 msgid "myzone & status"
-msgstr "myzone والحالة"
+msgstr "منطقتي وحالتي"
 
 #: ../src/bisho-pane.c:82
 msgid "Launch site for more information."
@@ -32,59 +34,70 @@ msgstr "فتح الموقع لمعلومات إضافية"
 
 #: ../src/bisho-pane.c:86
 #, c-format
-msgid "<small>You'll need an account with %s and an Internet connection to use this web service.</small>"
-msgstr "<small>هنالك حاجة لحساب %s واتّصال انترنت لاستخدام هذه الخدمة الشبكية..</small>"
+msgid ""
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
+msgstr ""
+"<small>هنالك حاجة لحساب %s واتّصال انترنت لاستخدام هذه الخدمة "
+"الشبكية..</small>"
 
-#: ../src/bisho-pane.c:223
+#: ../src/bisho-pane.c:239
 #, c-format
 msgid "Sorry, we can't log in to %s. %s"
 msgstr "نأسف لا يمكن الدخول الى %s. %s"
 
-#: ../src/bisho-pane.c:227
+#: ../src/bisho-pane.c:243
 #, c-format
 msgid "Sorry, we can't log in to %s"
 msgstr "نأسف, لا يمكن الدخول الى %s"
 
-#: ../src/bisho-pane-username.c:54
-#, fuzzy, c-format
-msgid "Log in succeeded. You'll see new things from %s in a couple of minutes."
-msgstr "نجح دخولك. ستظهر عناصر جديدة خلال بضعة دقائق."
+#: ../src/bisho-pane-username.c:57
+#, c-format
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr "نجح تسجيل الدخول. سترى أشياء جديدة من %s بعد قليل."
 
-#: ../src/bisho-pane-username.c:58
+#: ../src/bisho-pane-username.c:61
 #, c-format
 msgid "Sorry, we can't log into %s."
 msgstr "عذراً, لا يمكننا تسجيل الدخول إلى %s."
 
-#: ../src/bisho-pane-username.c:161
+#: ../src/bisho-pane-username.c:183
 #, c-format
-msgid "Log out succeeded. All trace of %s has been removed from your computer."
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
 msgstr "تم تسجيل الخروج. كل آثار %s تم حذفها من حاسوبك."
 
-#: ../src/bisho-pane-username.c:178
+#: ../src/bisho-pane-username.c:200
 msgid "Update"
 msgstr "تحديث"
 
-#: ../src/bisho-pane-username.c:181 ../src/bisho-pane-username.c:185
-#: ../src/bisho-pane-username.c:257
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
 msgid "Log in"
 msgstr "تسجيل الدخول"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
+msgid "Username:"
+msgstr "اسم المستخدم:"
+
+#: ../src/bisho-pane-username.c:346
+msgid "Password:"
+msgstr "كلمة السر:"
 
 #: ../src/bisho-window.c:66
 msgid "Quit"
 msgstr "خروج"
 
-#: ../src/bisho-frame.c:76 ../src/bisho-frame.c:82
-msgid "Username:"
-msgstr "اسم المستخدم:"
-
-#: ../src/bisho-frame.c:84
-msgid "Password:"
-msgstr "كلمة السر:"
-
 #. Please don't translate 'myzone'
-#: ../src/bisho-frame.c:215
-msgid "Set up your social networks to see new updates in myzone and the status panel."
-msgstr "اضبط حساباتك في الشبكات الاجتماعية على مشاهدة اجدد تحديثاتك في myzone ولوحة الحالة"
+#: ../src/bisho-frame.c:226
+msgid ""
+"Set up your social networks to see new updates in myzone and the status "
+"panel."
+msgstr ""
+"اضبط حساباتك في الشبكات الاجتماعية على مشاهدة اجدد تحديثاتك في منطقتي ولوحة "
+"الحالة"
 
 #: ../panes/flickr.c:298 ../panes/oauth.c:314
 msgid "Log me in"
@@ -125,12 +138,13 @@ msgstr "عندما تدخل الى %s، اضغط أكمل"
 
 #: ../panes/oauth.c:344
 #, c-format
-msgid "Once you have logged in to %s, enter the code they give you and press Continue."
+msgid ""
+"Once you have logged in to %s, enter the code they give you and press "
+"Continue."
 msgstr "عندما تدخل الى %s، ادخل الكود المعطى لك واضغط أكمل"
 
 #: ../panes/oauth.c:453
 msgid "Code:"
 msgstr "كود:"
 
-#~ msgid "%s login changed."
-#~ msgstr "تم تغيير الدخول %s"
+

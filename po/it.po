@@ -1,23 +1,23 @@
-# Italian translations for bisho package
-# Copyright (C) 2009 the bisho's copyright holder.
-# This file is distributed under the same license as the bisho package.
-# Milo Casagrande <milo@ubuntu.com>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: bisho\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-17 21:48+0000\n"
-"PO-Revision-Date: 2010-05-18 10:40-0800\n"
-"Last-Translator: francesca godani <francesca.godani@ptiglobal.net>\n"
-"Language-Team: Italian <tp@lists.linux.it>\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-02 13:17-0700\n"
+"PO-Revision-Date: 2010-11-30 06:21+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Italian (http://www.transifex.net/projects/p/meego/team/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../data/bisho.desktop.in.h:1
-#: ../src/bisho-window.c:40
+#: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
 #: ../src/bisho-cc-panel.c:69
 msgid "My Web Accounts"
 msgstr "Account web"
@@ -27,95 +27,99 @@ msgstr "Account web"
 msgid "myzone & status"
 msgstr "myzone e stato"
 
-# (ndt) è una specie di pulsante/collegamento
 #: ../src/bisho-pane.c:82
 msgid "Launch site for more information."
 msgstr "Apri il sito web per maggiori informazioni."
 
 #: ../src/bisho-pane.c:86
 #, c-format
-msgid "<small>You'll need an account with %s and an Internet connection to use this web service.</small>"
-msgstr "<small>Sono necessari un account con %s e una connessione a Internet per utilizzare questo servizio web.</small>"
+msgid ""
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
+msgstr ""
+"<small>Sono necessari un account con %s e una connessione a Internet per "
+"utilizzare questo servizio web.</small>"
 
-#: ../src/bisho-pane.c:223
+#: ../src/bisho-pane.c:239
 #, c-format
 msgid "Sorry, we can't log in to %s. %s"
 msgstr "Impossibile accedere a %s. %s"
 
-#: ../src/bisho-pane.c:227
+#: ../src/bisho-pane.c:243
 #, c-format
 msgid "Sorry, we can't log in to %s"
 msgstr "Impossibile accedere a %s"
 
-#: ../src/bisho-pane-username.c:54
+#: ../src/bisho-pane-username.c:57
 #, c-format
-msgid "Log in succeeded. You'll see new things from %s in a couple of minutes."
-msgstr "Accesso eseguito. In un paio di minuti verranno visualizzati nuovi elementi da %s."
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr ""
+"Accesso eseguito. In un paio di minuti verranno visualizzati nuovi elementi "
+"da %s."
 
-#: ../src/bisho-pane-username.c:58
+#: ../src/bisho-pane-username.c:61
 #, c-format
 msgid "Sorry, we can't log into %s."
 msgstr "Impossibile accedere a %s."
 
-#: ../src/bisho-pane-username.c:161
+#: ../src/bisho-pane-username.c:183
 #, c-format
-msgid "Log out succeeded. All trace of %s has been removed from your computer."
-msgstr "Logout eseguito con successo. Tutte le tracce di %s sono state rimosse dal computer."
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
+msgstr ""
+"Logout eseguito con successo. Tutte le tracce di %s sono state rimosse dal "
+"computer."
 
-#: ../src/bisho-pane-username.c:178
+#: ../src/bisho-pane-username.c:200
 msgid "Update"
 msgstr "Aggiornamento"
 
-# (ndt) pulsante
-#: ../src/bisho-pane-username.c:181
-#: ../src/bisho-pane-username.c:185
-#: ../src/bisho-pane-username.c:257
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
 msgid "Log in"
 msgstr "Accedi"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
+msgid "Username:"
+msgstr "Nome utente:"
+
+#: ../src/bisho-pane-username.c:346
+msgid "Password:"
+msgstr "Password:"
 
 #: ../src/bisho-window.c:66
 msgid "Quit"
 msgstr "Esci"
 
-#: ../src/bisho-frame.c:76
-#: ../src/bisho-frame.c:82
-msgid "Username:"
-msgstr "Nome utente:"
-
-#: ../src/bisho-frame.c:84
-msgid "Password:"
-msgstr "Password:"
-
 #. Please don't translate 'myzone'
-#: ../src/bisho-frame.c:215
-msgid "Set up your social networks to see new updates in myzone and the status panel."
-msgstr "Impostare i social network a cui si partecipa per visualizzare aggiornamenti all'interno della myzone e nel pannello di stato."
+#: ../src/bisho-frame.c:226
+msgid ""
+"Set up your social networks to see new updates in myzone and the status "
+"panel."
+msgstr ""
+"Impostare i social network a cui si partecipa per visualizzare aggiornamenti"
+" all'interno della myzone e nel pannello di stato."
 
-# (ndt) pulsante
-#: ../panes/flickr.c:294
-#: ../panes/oauth.c:314
+#: ../panes/flickr.c:298 ../panes/oauth.c:314
 msgid "Log me in"
 msgstr "Accedi"
 
-#: ../panes/flickr.c:298
-#: ../panes/oauth.c:318
+#: ../panes/flickr.c:302 ../panes/oauth.c:318
 msgid "Connecting..."
 msgstr "Connessione..."
 
-# (ndt) pulsante
-#: ../panes/flickr.c:299
-#: ../panes/oauth.c:332
-#: ../panes/oauth.c:349
+#: ../panes/flickr.c:303 ../panes/oauth.c:332 ../panes/oauth.c:349
 msgid "Continue"
 msgstr "Continua"
 
-#: ../panes/flickr.c:303
-#: ../panes/oauth.c:354
+#: ../panes/flickr.c:307 ../panes/oauth.c:354
 msgid "Log in succeeded. You'll see new items in a couple of minutes."
-msgstr "Accesso eseguito. In un paio di minuti verranno visualizzati nuovi elementi."
+msgstr ""
+"Accesso eseguito. In un paio di minuti verranno visualizzati nuovi elementi."
 
-#: ../panes/flickr.c:306
-#: ../panes/oauth.c:356
+#: ../panes/flickr.c:310 ../panes/oauth.c:356
 msgid "Log me out"
 msgstr "Disconnetti"
 
@@ -138,49 +142,15 @@ msgstr "Una volta eseguito l'accesso a %s, fare clic su «Continua»."
 
 #: ../panes/oauth.c:344
 #, c-format
-msgid "Once you have logged in to %s, enter the code they give you and press Continue."
-msgstr "Una volta eseguito l'accesso a %s, inserire il codice fornito e fare clic su «Continua»."
+msgid ""
+"Once you have logged in to %s, enter the code they give you and press "
+"Continue."
+msgstr ""
+"Una volta eseguito l'accesso a %s, inserire il codice fornito e fare clic su"
+" «Continua»."
 
 #: ../panes/oauth.c:453
 msgid "Code:"
 msgstr "Codice:"
 
-#~ msgid "%s login changed."
-#~ msgstr "Informazioni di accesso di %s modificate."
 
-#~ msgid "Log in pending"
-#~ msgstr "Accesso in corso"
-
-#~ msgid "Log in pending..."
-#~ msgstr "Accesso..."
-
-#~ msgid "Logged in as %s"
-#~ msgstr "Accesso effettuato come %s"
-
-#~ msgid "Logged in"
-#~ msgstr "Accesso effettuato"
-
-#~ msgid "<b>Status:</b>"
-#~ msgstr "<b>Stato:</b>"
-
-#~ msgid ""
-#~ "You'll need an account with %s and an Internet connection to use this web "
-#~ "service."
-#~ msgstr ""
-#~ "Sono necessari un account con %s e una connessione a Internet per "
-#~ "utilizzare questo servizio web."
-
-#~ msgid "Cannot login to %s"
-#~ msgstr "Impossibile accedere a %s"
-
-#~ msgid "Web Services"
-#~ msgstr "Servizi web"
-
-#~ msgid "Press Continue to continue the log in."
-#~ msgstr "Premere «Continua» per continuare l'accesso."
-
-#~ msgid "Web Services Settings"
-#~ msgstr "Impostazioni dei servizi web"
-
-#~ msgid "Once you have logged in to Flickr, press Continue."
-#~ msgstr "Una volta eseguito l'accesso a Flickr, fare clic su «Continua»."

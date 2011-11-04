@@ -1,0 +1,7 @@
+[main]
+host = https://meego.transifex.net
+
+[bisho.meego-bisho]
+file_filter = po/<lang>.po
+source_lang = en
+source_file = po/bisho.pot

@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Laurynas Butkus <laurynas.butkus@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: bisho\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-03-22 15:17+0000\n"
+"Last-Translator: laurynas <laurynas.butkus@gmail.com>\n"
+"Language-Team: Lithuanian (http://www.transifex.net/projects/p/meego/team/lt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
+#: ../src/bisho-cc-panel.c:69
+msgid "My Web Accounts"
+msgstr "Mano Web prieigos"
+
+#. Please don't translate "myzone"
+#: ../data/bisho.desktop.in.h:3
+msgid "myzone & status"
+msgstr "manozona ir statusas"
+
+#: ../src/bisho-pane.c:82
+msgid "Launch site for more information."
+msgstr "Daugiau informacijos svetainėje."
+
+#: ../src/bisho-pane.c:86
+#, c-format
+msgid ""
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
+msgstr ""
+"<small>Norint naudotis šia paslauga Jums reikės %s prieigos ir Interneto "
+"ryšio.</small>"
+
+#: ../src/bisho-pane.c:239
+#, c-format
+msgid "Sorry, we can't log in to %s. %s"
+msgstr "Atsiprašome, nepavyko prisijungti prie %s. %s"
+
+#: ../src/bisho-pane.c:243
+#, c-format
+msgid "Sorry, we can't log in to %s"
+msgstr "Atsiprašome, nepavyko prisijungti prie %s"
+
+#: ../src/bisho-pane-username.c:57
+#, c-format
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr "Prisijungti pavyko. Naujus įrašus iš %s pamatysite po kelių minučių."
+
+#: ../src/bisho-pane-username.c:61
+#, c-format
+msgid "Sorry, we can't log into %s."
+msgstr "Atsiprašome, nepavyko prisijungti prie %s."
+
+#: ../src/bisho-pane-username.c:183
+#, c-format
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
+msgstr "Atsijungti pavyko. Visi %s pėdsakai pašalinti iš jūsų kompiuterio."
+
+#: ../src/bisho-pane-username.c:200
+msgid "Update"
+msgstr "Atnaujinti"
+
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
+msgid "Log in"
+msgstr "Prisijungti"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
+msgid "Username:"
+msgstr "Vartotojas:"
+
+#: ../src/bisho-pane-username.c:346
+msgid "Password:"
+msgstr "Slaptažodis:"
+
+#: ../src/bisho-window.c:66
+msgid "Quit"
+msgstr "Baigti"
+
+#. Please don't translate 'myzone'
+#: ../src/bisho-frame.c:226
+msgid ""
+"Set up your social networks to see new updates in myzone and the status "
+"panel."
+msgstr ""
+"Sukonfigūruokite savo socialinius tinklus, tai leis matyti atnaujinimus "
+"\"manozona\" skiltyje bei statusų skydelyje."
+
+#: ../panes/flickr.c:298 ../panes/oauth.c:314
+msgid "Log me in"
+msgstr "Prisijungti"
+
+#: ../panes/flickr.c:302 ../panes/oauth.c:318
+msgid "Connecting..."
+msgstr "Prisijungiama..."
+
+#: ../panes/flickr.c:303 ../panes/oauth.c:332 ../panes/oauth.c:349
+msgid "Continue"
+msgstr "Tęsti"
+
+#: ../panes/flickr.c:307 ../panes/oauth.c:354
+msgid "Log in succeeded. You'll see new items in a couple of minutes."
+msgstr "Prisijungti pavyko. Naujus įrašus pamatysite po kelių minučių."
+
+#: ../panes/flickr.c:310 ../panes/oauth.c:356
+msgid "Log me out"
+msgstr "Atsijungti"
+
+#: ../panes/oauth.c:95
+msgid "You don't seem to have a network connection, this won't work."
+msgstr "Atrodo, kad neturite ryšio su tinklu, tai gali nesuveikti."
+
+#: ../panes/oauth.c:96
+msgid "You could check that the computer's clock is correct."
+msgstr "Jums reikėtų patikrinti ar kompiuterio laikrodis eina teisingai."
+
+#: ../panes/oauth.c:97
+msgid "You could try again."
+msgstr "Pabandykite dar kartą."
+
+#: ../panes/oauth.c:327
+#, c-format
+msgid "Once you have logged in to %s, press Continue."
+msgstr "Kai prisijungsite prie %s, spauskite Tęsti."
+
+#: ../panes/oauth.c:344
+#, c-format
+msgid ""
+"Once you have logged in to %s, enter the code they give you and press "
+"Continue."
+msgstr ""
+"Kai prisijungsite prie %s, įveskite jums pateiktą kodą ir spauskite Tęsti."
+
+#: ../panes/oauth.c:453
+msgid "Code:"
+msgstr "Kodas:"
+
+

@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# សុវិចិត្រ Sovichet ទេព Tep <sovichet.tep@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: bisho\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-04-21 12:57+0000\n"
+"Last-Translator: sovichet <sovichet.tep@gmail.com>\n"
+"Language-Team: Khmer (http://www.transifex.net/projects/p/meego/team/km/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: km\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
+#: ../src/bisho-cc-panel.c:69
+msgid "My Web Accounts"
+msgstr "គណនី​វែប​របស់​ខ្ញុំ"
+
+#. Please don't translate "myzone"
+#: ../data/bisho.desktop.in.h:3
+msgid "myzone & status"
+msgstr "myzone និង ស្ថានភាព"
+
+#: ../src/bisho-pane.c:82
+msgid "Launch site for more information."
+msgstr "ទស្សនា​គេហទំព័រ សម្រាប់​ព័ត៌មាន​បន្ថែម។"
+
+#: ../src/bisho-pane.c:86
+#, c-format
+msgid ""
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
+msgstr ""
+"<small>អ្នក​ត្រូវ​មាន​គណនី​ដែល​មាន %s និង​ការ​ត​ភ្ជាប​អ៊ីនធើណិត ដើម្បី​ប្រើ​"
+"សេវាកម្ម​វែប។</small>"
+
+#: ../src/bisho-pane.c:239
+#, c-format
+msgid "Sorry, we can't log in to %s. %s"
+msgstr "សូម​ទោស, យើង​មិន​អាច​ភ្ជាប់​ចូល %s ទេ។ %s"
+
+#: ../src/bisho-pane.c:243
+#, c-format
+msgid "Sorry, we can't log in to %s"
+msgstr "សូម​ទោស, យើង​មិន​អាច​ភ្ជាប់​ចូល %s ទេ"
+
+#: ../src/bisho-pane-username.c:57
+#, c-format
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr ""
+"ភ្ជាប់​ចូល​បាន​សម្រេច។ អ្នក​នឹង​ឃើញ​របស់​ថ្មី​ៗមក​ពី %s ក្នុង​រយៈ​ពេល​ប្រហែល"
+" ៤-៥នាទី​ទៀត។"
+
+#: ../src/bisho-pane-username.c:61
+#, c-format
+msgid "Sorry, we can't log into %s."
+msgstr "សូម​ទោស, យើង​មិន​អាច​ភ្ជាប់​ចូល %s ទេ"
+
+#: ../src/bisho-pane-username.c:183
+#, c-format
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
+msgstr ""
+"ភ្ជាប់​ចេញ​បាន​សម្រេច។ រាល់​ដាន​ទាំង​ឡាយ​នៃ %s ត្រូវ​បាន​សម្អាត​ចេញ​ពី​"
+"កុំព្យូទ័រ​របស់​អ្នក។"
+
+#: ../src/bisho-pane-username.c:200
+msgid "Update"
+msgstr "ធ្វើ​បច្ចុប្បន្នកម្ម"
+
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
+msgid "Log in"
+msgstr "ភ្ជាប់​ចូល"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
+msgid "Username:"
+msgstr "ឈ្មោះ​សមាជិក:"
+
+#: ../src/bisho-pane-username.c:346
+msgid "Password:"
+msgstr "ពាក្យ​សម្ងាត់:"
+
+#: ../src/bisho-window.c:66
+msgid "Quit"
+msgstr "ចាក​ចេញ"
+
+#. Please don't translate 'myzone'
+#: ../src/bisho-frame.c:226
+msgid ""
+"Set up your social networks to see new updates in myzone and the status "
+"panel."
+msgstr ""
+"ដំឡើង​បណ្ដាញ​សង្គម​របស់​អ្នក ដើម្បី​មើល​ការ​ធ្វើ​បច្ចុប្បន្នកម្ម​នានា​នៅ​"
+"ក្នុង myzone និង​បន្ទះ​ស្ថានភាព។"
+
+#: ../panes/flickr.c:298 ../panes/oauth.c:314
+msgid "Log me in"
+msgstr "ភ្ជាប់​ខ្ញុំ​ចូល"
+
+#: ../panes/flickr.c:302 ../panes/oauth.c:318
+msgid "Connecting..."
+msgstr "កំពុង​ភ្ជាប់..."
+
+#: ../panes/flickr.c:303 ../panes/oauth.c:332 ../panes/oauth.c:349
+msgid "Continue"
+msgstr "បន្ត"
+
+#: ../panes/flickr.c:307 ../panes/oauth.c:354
+msgid "Log in succeeded. You'll see new items in a couple of minutes."
+msgstr ""
+"ភ្ជាប់​ចូល​បាន​សម្រេច។ អ្នក​នឹង​ឃើញ​នូវ​របស់​ថ្មីៗ​ក្នុង​រយៈ​ពេល​ប្រហែល "
+"៤-៥នាទី។"
+
+#: ../panes/flickr.c:310 ../panes/oauth.c:356
+msgid "Log me out"
+msgstr "ភ្ជាប់​ខ្ញុំ​ចេញ"
+
+#: ../panes/oauth.c:95
+msgid "You don't seem to have a network connection, this won't work."
+msgstr "ដូច​ជា​មិន​មាន​ការ​ត​ភ្ជាប់​បណ្ដាញ​ទេ។ ដូច្នេះ​មិន​ដំណើរ​ការ​ទេ។"
+
+#: ../panes/oauth.c:96
+msgid "You could check that the computer's clock is correct."
+msgstr "អ្នក​គួរ​ពិនិត្យ​មើល​ថា តើ​ម៉ោង​ក្នុង​កុំព្យូទ័រ​ត្រូវ​ហើយឬនៅ។"
+
+#: ../panes/oauth.c:97
+msgid "You could try again."
+msgstr "អ្នក​អាច​ព្យាយាម​ម្ដង​ទៀត។"
+
+#: ../panes/oauth.c:327
+#, c-format
+msgid "Once you have logged in to %s, press Continue."
+msgstr "នៅ​ពេល​ដែល​អ្នក​បាន​ភ្ជាប់​ចូល %s, សូម​ចុច បន្ត។"
+
+#: ../panes/oauth.c:344
+#, c-format
+msgid ""
+"Once you have logged in to %s, enter the code they give you and press "
+"Continue."
+msgstr ""
+"នៅ​ពេល​ដែល​អ្នក​បាន​ភ្ជាប់​ចូល %s, សូម​បញ្ចូល​កូដ​ដែល​គេ​បាន​ឲ្យ​អ្នក "
+"បន្ទាប់​មក​សូម​ចុច បន្ត។"
+
+#: ../panes/oauth.c:453
+msgid "Code:"
+msgstr "កូដ:"
+
+

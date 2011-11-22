@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Teo  <anapospastos@hotmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: bisho\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-05-01 12:39+0000\n"
+"Last-Translator: anapospastos <anapospastos@hotmail.com>\n"
+"Language-Team: Greek (http://www.transifex.net/projects/p/meego/team/el/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
+#: ../src/bisho-cc-panel.c:69
+msgid "My Web Accounts"
+msgstr "Οι διαδικτυακοί Λογαριασμοί μου"
+
+#. Please don't translate "myzone"
+#: ../data/bisho.desktop.in.h:3
+msgid "myzone & status"
+msgstr ""
+
+#: ../src/bisho-pane.c:82
+msgid "Launch site for more information."
+msgstr "Είσοδος στην ιστοσελίδα για περισσότερες πληροφορίες."
+
+#: ../src/bisho-pane.c:86
+#, c-format
+msgid ""
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
+msgstr ""
+"<small>Θα χρειαστείτε έναν λογαριασμό με %s και μία σύνδεση στο Διαδίκτυο "
+"για να χρησιμοποιήσετε αυτή την υπηρεσία.</small>"
+
+#: ../src/bisho-pane.c:239
+#, c-format
+msgid "Sorry, we can't log in to %s. %s"
+msgstr "Συγνώμη, δεν μπορείτε να εισέλθετε στο %s. %s"
+
+#: ../src/bisho-pane.c:243
+#, c-format
+msgid "Sorry, we can't log in to %s"
+msgstr "Συγνώμη, δεν μπορείτε να εισέλθετε στο %s"
+
+#: ../src/bisho-pane-username.c:57
+#, c-format
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr ""
+"Είσοδος επιτυχής. Θα δείτε νέες ενημερώσεις από το %s σε μερικά λεπτά."
+
+#: ../src/bisho-pane-username.c:61
+#, c-format
+msgid "Sorry, we can't log into %s."
+msgstr "Συγνώμη, δεν μπορείτε να εισέλθετε στο %s."
+
+#: ../src/bisho-pane-username.c:183
+#, c-format
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
+msgstr ""
+"Έξοδος επιτυχής. Όλα τα ίχνη από το %s έχουν διαγραφεί από τον υπολογιστή "
+"σας."
+
+#: ../src/bisho-pane-username.c:200
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#: ../src/bisho-pane-username.c:203 ../src/bisho-pane-username.c:207
+#: ../src/bisho-pane-username.c:279
+msgid "Log in"
+msgstr "Είσοδος"
+
+#. The username widgets
+#: ../src/bisho-pane-username.c:331
+msgid "Username:"
+msgstr "Όνομα χρήστη:"
+
+#: ../src/bisho-pane-username.c:346
+msgid "Password:"
+msgstr "Κωδικός:"
+
+#: ../src/bisho-window.c:66
+msgid "Quit"
+msgstr "Έξοδος"
+
+#. Please don't translate 'myzone'
+#: ../src/bisho-frame.c:226
+msgid ""
+"Set up your social networks to see new updates in myzone and the status "
+"panel."
+msgstr ""
+
+#: ../panes/flickr.c:298 ../panes/oauth.c:314
+msgid "Log me in"
+msgstr "Είσοδος"
+
+#: ../panes/flickr.c:302 ../panes/oauth.c:318
+msgid "Connecting..."
+msgstr "Σύνδεση..."
+
+#: ../panes/flickr.c:303 ../panes/oauth.c:332 ../panes/oauth.c:349
+msgid "Continue"
+msgstr "Συνέχεια"
+
+#: ../panes/flickr.c:307 ../panes/oauth.c:354
+msgid "Log in succeeded. You'll see new items in a couple of minutes."
+msgstr "Είσοδος επιτυχής. Θα δείτε νέες ενημερώσεις σε μερικά λεπτά."
+
+#: ../panes/flickr.c:310 ../panes/oauth.c:356
+msgid "Log me out"
+msgstr "Έξοδος"
+
+#: ../panes/oauth.c:95
+msgid "You don't seem to have a network connection, this won't work."
+msgstr ""
+
+#: ../panes/oauth.c:96
+msgid "You could check that the computer's clock is correct."
+msgstr "Ελέγξτε αν είναι σωστή η ώρα του υπολογιστή."
+
+#: ../panes/oauth.c:97
+msgid "You could try again."
+msgstr "Μπορείτε να προσπαθήσετε ξανά."
+
+#: ../panes/oauth.c:327
+#, c-format
+msgid "Once you have logged in to %s, press Continue."
+msgstr "Μόλις μπείτε στο %s, πατήστε Συνέχεια."
+
+#: ../panes/oauth.c:344
+#, c-format
+msgid ""
+"Once you have logged in to %s, enter the code they give you and press "
+"Continue."
+msgstr ""
+"Μόλις μπείτε στο %s, εισάγετε τον κωδικό που θα σας δοθεί και πατήστε "
+"Συνέχεια."
+
+#: ../panes/oauth.c:453
+msgid "Code:"
+msgstr "Κώδικας:"
+
+

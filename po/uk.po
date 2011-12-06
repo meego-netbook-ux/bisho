@@ -1,17 +1,21 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-18 23:01+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Oleksii Baranov <aleksey.baranov@gmail.com>\n"
-"Language-Team: \n"
+"Project-Id-Version: bisho\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2010-11-30 06:21+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Ukrainian (http://www.transifex.net/projects/p/meego/team/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Ukrainian\n"
-"X-Poedit-Country: UKRAINE\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../data/bisho.desktop.in.h:1 ../src/bisho-window.c:40
 #: ../src/bisho-cc-panel.c:69
@@ -29,8 +33,12 @@ msgstr "Відкрийте сайт щоб отримати більше інф�
 
 #: ../src/bisho-pane.c:86
 #, c-format
-msgid "<small>You'll need an account with %s and an Internet connection to use this web service.</small>"
-msgstr "<small>Щоб скористатися цим веб сервісом, Вам потрібен обліковий запис на %s та підключення до Інтернету.</small>"
+msgid ""
+"<small>You'll need an account with %s and an Internet connection to use this"
+" web service.</small>"
+msgstr ""
+"<small>Щоб скористатися цим веб сервісом, Вам потрібен обліковий запис на %s"
+" та підключення до Інтернету.</small>"
 
 #: ../src/bisho-pane.c:239
 #, c-format
@@ -44,8 +52,10 @@ msgstr "Неможливо увійти до %s"
 
 #: ../src/bisho-pane-username.c:57
 #, c-format
-msgid "Log in succeeded. You'll see new things from %s in a couple of minutes."
-msgstr "Вхід завершено. Ви побачете нові елементи з %s протягом декількох хвилин."
+msgid ""
+"Log in succeeded. You'll see new things from %s in a couple of minutes."
+msgstr ""
+"Вхід завершено. Ви побачете нові елементи з %s протягом декількох хвилин."
 
 #: ../src/bisho-pane-username.c:61
 #, c-format
@@ -54,7 +64,8 @@ msgstr "Неможливо увійти до %s."
 
 #: ../src/bisho-pane-username.c:183
 #, c-format
-msgid "Log out succeeded. All trace of %s has been removed from your computer."
+msgid ""
+"Log out succeeded. All trace of %s has been removed from your computer."
 msgstr "Вхід завершено. Всі сліди від %s були видалені з вашого комп'ютера."
 
 #: ../src/bisho-pane-username.c:200
@@ -81,8 +92,12 @@ msgstr "Вийти"
 
 #. Please don't translate 'myzone'
 #: ../src/bisho-frame.c:226
-msgid "Set up your social networks to see new updates in myzone and the status panel."
-msgstr "Налаштуйте свої соціальні мережі щоб побачити оновлення в myzone та на панелі стану"
+msgid ""
+"Set up your social networks to see new updates in myzone and the status "
+"panel."
+msgstr ""
+"Налаштуйте свої соціальні мережі щоб побачити оновлення в myzone та на "
+"панелі стану"
 
 #: ../panes/flickr.c:298 ../panes/oauth.c:314
 msgid "Log me in"
@@ -106,7 +121,8 @@ msgstr "Вийти"
 
 #: ../panes/oauth.c:95
 msgid "You don't seem to have a network connection, this won't work."
-msgstr "Схоже, що ви не підключені до мережі, без підключення робота неможлива."
+msgstr ""
+"Схоже, що ви не підключені до мережі, без підключення робота неможлива."
 
 #: ../panes/oauth.c:96
 msgid "You could check that the computer's clock is correct."
@@ -123,39 +139,13 @@ msgstr "Натисніть Далі після входу на %s."
 
 #: ../panes/oauth.c:344
 #, c-format
-msgid "Once you have logged in to %s, enter the code they give you and press Continue."
+msgid ""
+"Once you have logged in to %s, enter the code they give you and press "
+"Continue."
 msgstr "Після входу на %s, введіть отриманий код та натисніть Далі."
 
 #: ../panes/oauth.c:453
 msgid "Code:"
 msgstr "Код:"
 
-#~ msgid "Log in pending"
-#~ msgstr "Очікування на вхід"
 
-#~ msgid "Log in pending..."
-#~ msgstr "Очікування на вхід..."
-
-#~ msgid "Logged in as %s"
-#~ msgstr "Ви увійшли як %s"
-
-#~ msgid "Logged in"
-#~ msgstr "Вхід виконано"
-
-#~ msgid "<b>Status:</b>"
-#~ msgstr "<b>Стан:</b>"
-
-#~ msgid "%s login changed."
-#~ msgstr "Логін %s змінено."
-
-#~ msgid "Web Services"
-#~ msgstr "Веб Сервіси"
-
-#~ msgid "Press Continue to continue the log in."
-#~ msgstr "Натисніть Далі для продовження."
-
-#~ msgid "Web Services Settings"
-#~ msgstr "Налаштування Веб Сервісів"
-
-#~ msgid "Once you have logged in to Flickr, press Continue."
-#~ msgstr "Натисніть Далі після входу на Flickr."

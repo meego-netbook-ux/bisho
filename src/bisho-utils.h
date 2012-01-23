@@ -21,11 +21,13 @@
 #define __BISHO_UTILS_H__
 
 #include <gtk/gtk.h>
+#if 0
 #include "mux-expanding-item.h"
+#endif
 
 G_BEGIN_DECLS
 
-void bisho_utils_make_exclusive_expander (MuxExpandingItem *item);
+void bisho_utils_make_exclusive_expander (GtkExpander *item);
 
 char * bisho_utils_encode_tokens (const char *token, const char *secret);
 

@@ -19,7 +19,6 @@ AC_PROG_LIBTOOL
 AS_AC_EXPAND(BINDIR, $bindir)
 
 AC_SUBST(LIBEXECDIR)
-
 GETTEXT_PACKAGE=bisho
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [The name of the gettext package.])
 AC_SUBST(GETTEXT_PACKAGE)
@@ -31,13 +30,12 @@ IT_PROG_INTLTOOL([0.40], [no-xml])
 PKG_CHECK_MODULES(DEPS, gmodule-export-2.0
                         libsocialweb-client >= 0.24.8
                         libsocialweb-keystore
-                        gtk+-2.0
+                        gtk+-3.0
                         gnome-keyring-1
                         libsoup-2.4
                         rest-0.7
                         rest-extras-0.7
-                        unique-1.0
-                        mx-gtk-1.0)
+                        unique-3.0)
 
 AC_ARG_ENABLE([capplet],
               [AC_HELP_STRING([--disable-capplet],

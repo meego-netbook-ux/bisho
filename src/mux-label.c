@@ -33,8 +33,12 @@ mux_label_style_set (GtkWidget *widget, GtkStyle *previous)
 {
   GTK_WIDGET_CLASS (mux_label_parent_class)->style_set (widget, previous);
 
+#if 0  
+  GtkStyleContext *context = gtk_widget_get_style_context (widget);
   widget->style->base[GTK_STATE_NORMAL] = widget->style->bg[GTK_STATE_NORMAL];
   widget->style->text[GTK_STATE_NORMAL] = widget->style->fg[GTK_STATE_NORMAL];
+#endif
+#warning TODO
 }
 
 static void

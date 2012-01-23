@@ -21,7 +21,6 @@
 #include <glib/gi18n-lib.h>
 #include <gtk/gtk.h>
 #include <libsocialweb-client/sw-client.h>
-#include "mux-expanding-item.h"
 #include "bisho-module.h"
 #include "bisho-frame.h"
 #include "bisho-utils.h"
@@ -46,8 +45,6 @@ construct_ui (BishoFrame *frame, const char *service_name)
 {
   ServiceInfo *info;
   GtkWidget *expander, *pane;
-  GtkBox *box;
-  MuxExpandingItem *m;
 
   g_assert (frame);
   g_assert (service_name);
@@ -56,28 +53,31 @@ construct_ui (BishoFrame *frame, const char *service_name)
   if (info == NULL)
     return;
 
-  expander = mux_expanding_item_new ();
-  m = MUX_EXPANDING_ITEM (expander);
+  expander = gtk_expander_new (info->display_name);
 
-  bisho_utils_make_exclusive_expander (m);
+  bisho_utils_make_exclusive_expander (GTK_EXPANDER (expander));
+#if 0
   if (info->icon) {
     mux_expanding_item_set_icon_from_file (m, info->icon);
   } else {
     mux_expanding_item_set_label (m, info->display_name);
   }
+#endif
 
+#if 0
   box = mux_expanding_item_get_content_box (m);
   gtk_container_set_border_width (GTK_CONTAINER (box), 8);
   gtk_box_set_spacing (box, 8);
+#endif
 
   if (g_strcmp0 (info->auth_type, "username") == 0) {
     pane = bisho_pane_username_new (info, FALSE);
     gtk_widget_show (pane);
-    gtk_box_pack_start (GTK_BOX (box), pane, FALSE, FALSE, 0);
+    gtk_container_add (GTK_CONTAINER (expander), pane);
   } else if (g_strcmp0 (info->auth_type, "password") == 0) {
     pane = bisho_pane_username_new (info, TRUE);
     gtk_widget_show (pane);
-    gtk_box_pack_start (GTK_BOX (box), pane, FALSE, FALSE, 0);
+    gtk_container_add (GTK_CONTAINER (expander), pane);
   } else {
     gpointer pane_type;
 
@@ -88,12 +88,14 @@ construct_ui (BishoFrame *frame, const char *service_name)
                            "service", info,
                            NULL);
       gtk_widget_show (pane);
-      gtk_box_pack_start (GTK_BOX (box), pane, FALSE, FALSE, 0);
+      gtk_container_add (GTK_CONTAINER (expander), pane);
       g_hash_table_insert (frame->priv->panes, info->name, pane);
+    } else {
+      g_message ("Cannot find pane implementation for type %s", info->auth_type);
     }
   }
 
-  gtk_widget_show_all (expander);
+  gtk_widget_show (expander);
   gtk_box_pack_start (GTK_BOX (frame), expander, FALSE, FALSE, 0);
 }
 

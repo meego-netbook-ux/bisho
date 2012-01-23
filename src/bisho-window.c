@@ -39,17 +39,21 @@ bisho_window_init (BishoWindow *self)
 
   gtk_window_set_title (GTK_WINDOW (self), _("My Web Accounts"));
   gtk_window_set_icon_name (GTK_WINDOW (self), "bisho");
+
+#if 0
   gtk_window_set_decorated (GTK_WINDOW (self), FALSE);
 
   screen = gtk_widget_get_screen (GTK_WIDGET (self));
   gtk_window_set_default_size (GTK_WINDOW (self),
                                gdk_screen_get_width (screen),
                                gdk_screen_get_height (screen));
+#endif
 
   box = gtk_vbox_new (FALSE, 0);
   gtk_widget_show (box);
   gtk_container_add (GTK_CONTAINER (self), box);
 
+#if 0
   toolbar = gtk_toolbar_new ();
   gtk_widget_set_name (toolbar, "MoblinToolbar");
   gtk_widget_show (toolbar);
@@ -67,6 +71,7 @@ bisho_window_init (BishoWindow *self)
   g_signal_connect (quit, "clicked", G_CALLBACK (gtk_main_quit), NULL);
   gtk_widget_show_all (quit);
   gtk_toolbar_insert ((GtkToolbar *)toolbar, (GtkToolItem *)quit, -1);
+#endif
 
   self->frame = bisho_frame_new ();
   bisho_frame_populate (BISHO_FRAME (self->frame));

@@ -308,6 +308,7 @@ update_widgets (BishoPaneOauth *pane, ButtonState state)
   g_signal_handlers_disconnect_by_func (priv->button, log_in_clicked, pane);
 
   switch (state) {
+  g_debug ("oauth state %d", state);
   case LOGGED_OUT:
     bisho_pane_set_banner (BISHO_PANE (pane), NULL);
     gtk_widget_show (priv->button);

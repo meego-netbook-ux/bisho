@@ -19,22 +19,25 @@
 
 #include <string.h>
 #include <gtk/gtk.h>
+#if 0
 #include "mux-expanding-item.h"
+#endif
 #include "bisho-utils.h"
+
 
 static GList *expander_list = NULL;
 
 static void
 expanded_cb (GObject *object, GParamSpec *param_spec, gpointer user_data)
 {
-  MuxExpandingItem *just_expanded = MUX_EXPANDING_ITEM (object);
+  GtkExpander *just_expanded = GTK_EXPANDER (object);
   GList *l;
 
-  if (mux_expanding_item_get_active (just_expanded)) {
+  if (gtk_expander_get_expanded (just_expanded)) {
     for (l = expander_list; l; l = l->next) {
-      MuxExpandingItem *expander = l->data;
-      if (expander != just_expanded && mux_expanding_item_get_active (expander))
-        mux_expanding_item_set_active (expander, FALSE);
+      GtkExpander *expander = l->data;
+      if (expander != just_expanded && gtk_expander_get_expanded (expander))
+        gtk_expander_set_expanded (expander, FALSE);
     }
   }
 }
@@ -46,9 +49,9 @@ item_finalized_cb (gpointer data, GObject *object)
 }
 
 void
-bisho_utils_make_exclusive_expander (MuxExpandingItem *item)
+bisho_utils_make_exclusive_expander (GtkExpander *item)
 {
-  g_return_if_fail (MUX_IS_EXPANDING_ITEM (item));
+  g_return_if_fail (GTK_IS_EXPANDER (item));
 
   expander_list = g_list_prepend (expander_list, item);
 

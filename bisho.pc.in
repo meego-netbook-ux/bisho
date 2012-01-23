@@ -9,4 +9,4 @@ Description: My Web Accounts pane module
 Version: @VERSION@
 Cflags: -I${includedir}
 Libs: -L${libdir} -lbisho-common
-Requires: libsocialweb-client gtk+-2.0
+Requires: libsocialweb-client gtk+-3.0

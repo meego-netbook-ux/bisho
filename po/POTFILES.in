@@ -4,8 +4,6 @@ src/bisho-pane-username.c
 src/bisho-utils.c
 src/bisho-window.c
 src/main.c
-src/mux-expander.c
-src/mux-expanding-item.c
 src/service-info.c
 src/bisho-cc-panel.c
 src/bisho-frame.c

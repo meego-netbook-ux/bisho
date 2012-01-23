@@ -38,10 +38,10 @@ PKG_CHECK_MODULES(DEPS, gmodule-export-2.0
                         unique-3.0)
 
 AC_ARG_ENABLE([capplet],
-              [AC_HELP_STRING([--disable-capplet],
-                              [Disable the building of the capplet])],
+              [AC_HELP_STRING([--enable-capplet],
+                              [Enable the building of the capplet])],
               [enable_cappled=$enableval],
-              [enable_capplet=yes])
+              [enable_capplet=no])
 
 AM_CONDITIONAL([ENABLE_CAPPLET], [test "x$enable_capplet" = "xyes"])
 
